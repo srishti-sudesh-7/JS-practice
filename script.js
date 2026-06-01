@@ -7,9 +7,6 @@ function operation() {
     switch (choice) {
         case "1":
             let num = Number(input);
-
-            result = typeof num;
-            break;
             if (num % 2 === 0)result = "Even";
             else result = "Odd";
             break;
