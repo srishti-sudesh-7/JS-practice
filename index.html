@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Practice</title>
+</head>
+<body>
+
+    <h3>Select one of the tasks and enter input. Input can be numerical, string or array (Seperate by commas)</h3>
+
+    <label>Operation:</label>
+    <select id="choice">
+        <option value="1">Even or odd</option>
+        <option value="2">Reverse string</option>
+        <option value="3">Largest number in array</option>
+        <option value="4">Factorial</option>
+        <option value="5">Palindrome check</option>
+    </select>
+
+    <br><br>
+
+    <label>Enter Input:</label>
+    <input type="text" id="input">
+
+    <button onclick="performOperation()">Submit</button>
+
+    <br><br>
+
+    <h3>Result:</h3>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
