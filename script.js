@@ -31,7 +31,7 @@ function operation() {
             break;
         case "5":
             let rev = input.split("").reverse().join("");
-            if (input === rev) result = "palindrome";
+            if (input === rev) result = "Palindrome";
             else result = "Not a palindrome";
             break;
         default:
