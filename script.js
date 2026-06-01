@@ -9,6 +9,7 @@ function operation() {
             let num = Number(input);
             if (num % 2 === 0)result = "Even";
             else result = "Odd";
+            if(isNaN(num)) result = "invalid input";
             break;
         case "2":
             result = input.split("").reverse().join("");
@@ -17,6 +18,7 @@ function operation() {
             let arr = input.split(",").map(Number);
             let largest = arr[0];
             for (let i = 1; i < arr.length; i++) {
+                
                 if (arr[i] > largest) {
                     largest = arr[i];
                 }
