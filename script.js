@@ -28,10 +28,11 @@ function operation() {
             let factorial = 1;
             for (let i = 1; i <= n; i++) factorial *= i;
             result = "Factorial: " + factorial;
+            if(factorial==1 && n!=1 && n!=0) result = 'invalid input';
             break;
         case "5":
             let rev = input.split("").reverse().join("");
-            if (input === rev) result = "Palindrome";
+            if (input === rev) result = "palindrome";
             else result = "Not a palindrome";
             break;
         default:
