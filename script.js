@@ -17,12 +17,9 @@ function operation() {
         case "3":
             let arr = input.split(",").map(Number);
             let largest = arr[0];
-            for (let i = 1; i < arr.length; i++) {
-                
-                if (arr[i] > largest) {
+            for (let i = 1; i < arr.length; i++)
+                if (arr[i] > largest)
                     largest = arr[i];
-                }
-            }
             result = "Largest number: " + largest;
             break;
         case "4":
